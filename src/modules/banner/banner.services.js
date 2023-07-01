@@ -24,6 +24,9 @@ class BannerServices{
         }
 
     }
+
+
+    
 }
 
 module.exports= BannerServices

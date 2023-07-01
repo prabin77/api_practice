@@ -4,6 +4,9 @@ const router = require("express").Router()
 
 
 router.post("/banner-create",uploader.single("image"), bannerCtrl.bannerData)
-//route.post("/banner-update",(req, res , next)=>{})
+//router.get("/banner-edit", bannerCtrl.editBannerData)
+router.get("/banner-list", bannerCtrl.listBannerData)
+router.post("/banner-delete", bannerCtrl.deleteBannerData)
+
 
 module.exports= router;
